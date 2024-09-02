@@ -1,7 +1,10 @@
 package itselijahwood.TxtToHtml;
 
-import java.io.*;
-import java.util.*;
+import java.io.FileNotFoundException;
+import java.io.FileReader;
+import java.io.PrintWriter;
+import java.util.NoSuchElementException;
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -60,6 +63,7 @@ public class Main {
             }
             fileIn.close();
             fileOut.close();
+            scanner.close();
         } catch (FileNotFoundException e ) {
             System.out.println("File not found");
         }
