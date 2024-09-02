@@ -29,7 +29,7 @@ public class Main {
                 filenameOut = filenameIn.substring(0, dotIndex) + ".html";
             }
             fileOut = new PrintWriter(filenameOut);
-
+            
             try {
                 line = fileIn.nextLine();
             } catch (NoSuchElementException e) {
